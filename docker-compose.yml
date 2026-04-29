@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  athleteiq:
+    build: .
+    container_name: athleteiq-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped

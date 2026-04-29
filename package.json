@@ -1,0 +1,27 @@
+{
+  "name": "athleteiq",
+  "version": "1.0.0",
+  "description": "AI Fitness and Food Coach for athletes",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node -e \"console.log('Open index.html in browser and navigate to App Tests page')\"",
+    "docker:build": "docker build -t athleteiq .",
+    "docker:run": "docker run -p 8080:80 athleteiq",
+    "deploy": "gcloud run deploy athleteiq --source . --platform managed --region asia-south1 --allow-unauthenticated"
+  },
+  "keywords": [
+    "fitness",
+    "health",
+    "food",
+    "coach",
+    "athletes",
+    "gym",
+    "nutrition"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}
